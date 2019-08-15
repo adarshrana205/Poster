@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "284150352316",
+    "firebase_url": "https://poster-68152.firebaseio.com",
+    "project_id": "poster-68152",
+    "storage_bucket": "poster-68152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284150352316:android:78b76078d070e1ad",
+        "android_client_info": {
+          "package_name": "com.hfad.social_network_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284150352316-fhc9nepgb671aeuno4nc2jp30rvmuq6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.social_network_app",
+            "certificate_hash": "94174148edbf3963165a80d0271a4159b51f9278"
+          }
+        },
+        {
+          "client_id": "284150352316-ljl2v5n1bb69v3hau8n5qm5nv76em0bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM9KyqMP7GCsq4W0HiVHVZH026gBrdRXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284150352316-ljl2v5n1bb69v3hau8n5qm5nv76em0bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
