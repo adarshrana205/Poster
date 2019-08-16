@@ -1,0 +1,4 @@
+#Mon Aug 12 00:52:46 IST 2019
+base.0=/home/adarshrana205/AndroidStudioProjects/Social_network_app/app/build/intermediates/transforms/dexMerger/debug/7
+path.0=classes.dex
+renamed.0=classes.dex

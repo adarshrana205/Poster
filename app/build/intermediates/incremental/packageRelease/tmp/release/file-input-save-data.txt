@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Aug 12 00:26:59 IST 2019
+0.baseType=DIRECTORY
+0.base=/home/adarshrana205/AndroidStudioProjects/Social_network_app/app/build/intermediates/dex/release/mergeDexRelease/out
+0.path=classes.dex
+0.set=DEX
+count=1

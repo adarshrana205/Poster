@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hfad.social_network_app"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.hfad.social_network_app.MyPostActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.ChatActivity"
+            android:parentActivityName="com.hfad.social_network_app.FriendsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.FriendsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.hfad.social_network_app.PersonProfileActivity" />
+        <activity
+            android:name="com.hfad.social_network_app.ResetPasswordActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.hfad.social_network_app.CommentsActivity" />
+        <activity
+            android:name="com.hfad.social_network_app.FindFriendsActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.hfad.social_network_app.ProfileActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.SettingsActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.ClickpostActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.PostActivity"
+            android:parentActivityName="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.LoginActivity"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hfad.social_network_app.SetupActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.RegisterActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hfad.social_network_app.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.hfad.social_network_app.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
