@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/chat_bar_layout"
+        layout="@layout/app_bar_layout">
+
+    </include>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/messages_list"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/my_linear_layout"
+        android:layout_below="@+id/chat_bar_layout">
+    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            android:id="@+id/my_linear_layout"
+            >
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_select_image"
+                android:id="@+id/send_image_file_button"
+                />
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter your message here"
+                android:padding="17dp"
+                android:id="@+id/input_message"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send_message"
+                android:id="@+id/send_message_button"
+
+                />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
