@@ -3,3 +3,19 @@ The app designed in Android Studio using JAVA language firebase as realtime data
 
 ## How to use
 You may transfer the "mini_instagram.apk" file to your android mobile phone and install it to run on the device.
+
+## Some Screenshots
+![Screenshot_20210303-155522_Poster.jpg](https://www.dropbox.com/s/ezmo7cyof3o2wdm/Screenshot_20210303-155522_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155550_Poster.jpg](https://www.dropbox.com/s/ejpxv6914devjbz/Screenshot_20210303-155550_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155512_Poster.jpg](https://www.dropbox.com/s/y6p9v6l09bh1jru/Screenshot_20210303-155512_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155735_Poster.jpg](https://www.dropbox.com/s/zip3z0knzexcjha/Screenshot_20210303-155735_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155747_Poster.jpg](https://www.dropbox.com/s/38yqdwnd7ewutyg/Screenshot_20210303-155747_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155757_Poster.jpg](https://www.dropbox.com/s/11khrc3mz4kjuqa/Screenshot_20210303-155757_Poster.jpg?dl=0&raw=1)
+
+![Screenshot_20210303-155810_Poster.jpg](https://www.dropbox.com/s/fmrnttl33two3fz/Screenshot_20210303-155810_Poster.jpg?dl=0&raw=1)
+
